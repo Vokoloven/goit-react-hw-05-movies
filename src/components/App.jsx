@@ -29,7 +29,7 @@ export const App = () => {
         <StyledLink to="movies">Movies</StyledLink>
       </Box>
       <Routes>
-        <Route path="/" index element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="movies" element={<Movies />}></Route>
         <Route path="/movies/:moviesId" element={<MovieDetails />}>
           <Route path="/movies/:moviesId/cast" element={<Cast></Cast>} />
