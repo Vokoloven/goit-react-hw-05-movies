@@ -28,9 +28,9 @@ const Cast = () => {
     <>
       <ul>
         {credits.map(
-          ({ id, name, profile_path, character }) =>
+          ({ cast_id, name, profile_path, character }) =>
             profile_path && (
-              <Box key={id}>
+              <Box key={cast_id}>
                 <img
                   src={`https://image.tmdb.org/t/p/w500${profile_path}`}
                   alt={name}
