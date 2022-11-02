@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { getCreditsApi } from '../../services/credits.service';
 import { Box } from 'Theme/Box';
 
-export const Cast = () => {
+const Cast = () => {
   const { moviesId } = useParams();
   const [credits, setCredits] = useState([]);
   const isFirstRender = useRef(true);
@@ -45,3 +45,5 @@ export const Cast = () => {
     </>
   );
 };
+
+export default Cast;

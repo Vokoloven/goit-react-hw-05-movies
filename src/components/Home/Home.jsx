@@ -3,7 +3,7 @@ import { getTrendingApi } from '../../services/trending.service';
 import { Outlet, NavLink } from 'react-router-dom';
 import { Box } from 'Theme/Box';
 
-export const Home = () => {
+const Home = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -40,3 +40,5 @@ export const Home = () => {
     </>
   );
 };
+
+export default Home;

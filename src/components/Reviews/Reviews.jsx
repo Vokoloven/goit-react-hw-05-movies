@@ -4,7 +4,7 @@ import { getReviewsApi } from '../../services/reviews.service';
 import { StyledParagraph, TitleH3 } from './StyledReviews';
 import { Box } from 'Theme/Box';
 
-export const Reviews = () => {
+const Reviews = () => {
   const { moviesId } = useParams();
   const [reviews, setReviews] = useState([]);
   const isFirstRender = useRef(true);
@@ -46,3 +46,5 @@ export const Reviews = () => {
     );
   }
 };
+
+export default Reviews;

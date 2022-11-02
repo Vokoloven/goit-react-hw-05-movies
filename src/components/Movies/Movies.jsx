@@ -4,7 +4,7 @@ import { SearchBar } from 'components/SearchBar';
 import { getsearchingMovieApi } from '../../services/searchingMovie.service';
 import { Box } from 'Theme/Box';
 
-export const Movies = () => {
+const Movies = () => {
   const [movies, setMovies] = useState([]);
   const [searchParams] = useSearchParams();
   const query = searchParams.get('query');
@@ -42,3 +42,5 @@ export const Movies = () => {
     </>
   );
 };
+
+export default Movies;

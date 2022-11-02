@@ -13,7 +13,7 @@ import {
 } from './StyledMovieDetails';
 import { FaArrowAltCircleLeft } from 'react-icons/fa';
 
-export const MovieDetails = () => {
+const MovieDetails = () => {
   const [movie, setMovie] = useState({});
   const { moviesId } = useParams();
   let navigate = useNavigate();
@@ -78,7 +78,10 @@ export const MovieDetails = () => {
           </li>
         </ul>
       </Box>
+
       <Outlet />
     </>
   );
 };
+
+export default MovieDetails;
