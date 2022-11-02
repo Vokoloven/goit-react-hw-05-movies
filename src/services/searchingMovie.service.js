@@ -9,7 +9,7 @@ const searchingMovie = axios.create({
 });
 
 export const getsearchingMovieApi = async params => {
-  const response = await searchingMovie.get(`search/movie/`, { params });
+  const response = await searchingMovie.get(`search/movie`, { params });
 
   const data = response.data.results;
 
